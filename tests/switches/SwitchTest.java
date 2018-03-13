@@ -70,7 +70,13 @@ public class SwitchTest {
 	}
 
 	@Test
-	public void SwitchTest_toString() {
+	public void SwitchTest_toString1() {
+		Switch s = new Switch();
+		assertEquals("(unlabeled): off", s.toString());
+	}
+
+	@Test
+	public void SwitchTest_toString2() {
 		Switch s = new Switch("Master", off);
 		assertEquals("Master: off", s.toString());
 	}

@@ -83,6 +83,8 @@ public class Switch {
 	 */
 	@Override
 	public String toString() {
-		return getLabel() + ": " + getState();
+		String label = getLabel();
+		if (label.equals("")) { label = "(unlabeled)"; }
+		return label + ": " + getState();
 	}
 }
