@@ -1,0 +1,14 @@
+# .gitignore
+#
+# Java (and IntelliJ IDEA)
+#
+# Ignore Everything
+/*
+
+# Except for these:
+!.gitattributes
+!.gitignore
+!*.md
+!License
+!src
+!tests
