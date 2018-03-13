@@ -53,7 +53,6 @@ public class Switch {
 	/*
 	 * Accessors (aka getters) provide controlled access to the object's state.
 	 */
-
 	public String getLabel() { return _label; }
 
 	public state getState() { return _state; }
@@ -63,7 +62,6 @@ public class Switch {
 	/*
 	 * Mutators (aka setters) mediate requests to change the object's state.
 	 */
-
 	public void setLabel(String label) { _label = label; }
 
 	public void setState(state state) {	_state = state;	}
@@ -83,7 +81,6 @@ public class Switch {
 	 * Provide a toSting() method so that the object can be printed in
 	 * a useful form for testing, debugging, and in error messages.
 	 */
-
 	@Override
 	public String toString() {
 		return getLabel() + ": " + getState();
