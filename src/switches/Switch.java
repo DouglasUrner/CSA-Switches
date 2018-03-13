@@ -2,6 +2,11 @@ package switches;
 
 import static switches.state.*;
 
+/*
+ * The enum keyword is used to declare a type that holds a list of named values.
+ * Here the values are the possible states of the switch. The use of an enumerated
+ * list ensures that only "legal" values for the state are used.
+ */
 enum state { on, off }
 
 public class Switch {
