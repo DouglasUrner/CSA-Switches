@@ -65,10 +65,13 @@ public class Switch {
 	 */
 
 	public void setLabel(String label) { _label = label; }
+
 	public void setState(state state) {	_state = state;	}
 
 	public void on() { setState(on); }
+
 	public void off() { setState(off); }
+
 	public void toggle() {
 		if (isOn())
 			off();
