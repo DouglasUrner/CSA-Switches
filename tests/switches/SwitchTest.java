@@ -55,4 +55,23 @@ public class SwitchTest {
 		s.toggle();
 		assertTrue(s.getState() == off);
 	}
+
+	@Test
+	public void SwitchTest_getLabel() {
+		Switch s = new Switch("Master", off);
+		assertEquals("Master", s.getLabel());
+	}
+
+	@Test
+	public void SwitchTest_setLabel() {
+		Switch s = new Switch("", off);
+		s.setLabel("Master");
+		assertEquals("Master", s.getLabel());
+	}
+
+	@Test
+	public void SwitchTest_toString() {
+		Switch s = new Switch("Master", off);
+		assertEquals("Master: off", s.toString());
+	}
 }

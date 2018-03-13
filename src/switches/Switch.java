@@ -58,7 +58,7 @@ public class Switch {
 
 	public state getState() { return _state; }
 
-	public boolean isOn() { return (getState() == on) ? true : false; }
+	public boolean isOn() { return (getState() == on); }
 
 	/*
 	 * Mutators (aka setters) mediate requests to change the object's state.
